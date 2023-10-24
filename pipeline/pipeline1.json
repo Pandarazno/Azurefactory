@@ -32,6 +32,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@variables('table')",
+						"type": "Expression"
+					},
 					"isSequential": true
 				}
 			}
