@@ -36,13 +36,52 @@
 						"value": "@variables('table')",
 						"type": "Expression"
 					},
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Copy data1",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"enableStaging": false
+							}
+						}
+					]
 				}
 			}
 		],
+		"parameters": {
+			"Schema1": {
+				"type": "array",
+				"defaultValue": [
+					"finance"
+				]
+			},
+			"Schema2": {
+				"type": "array",
+				"defaultValue": [
+					"dbo"
+				]
+			}
+		},
 		"variables": {
 			"table": {
-				"type": "String"
+				"type": "Array",
+				"defaultValue": [
+					"LogisticsAddressCountryRegionStaging",
+					"PaymTermInvoiceStaging",
+					"UFTProjInvoiceJourStaging",
+					"aqs_canton",
+					"aqs_cliente"
+				]
 			}
 		},
 		"annotations": []
