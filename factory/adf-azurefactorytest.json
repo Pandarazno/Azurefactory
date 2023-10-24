@@ -1,0 +1,9 @@
+{
+	"name": "adf-azurefactorytest",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "aa607b6a-5212-4159-9a0e-03e77b500ee5",
+		"tenantId": "ac473997-4596-473c-8c14-37787eca5070"
+	}
+}
