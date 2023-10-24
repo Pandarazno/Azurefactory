@@ -4,15 +4,14 @@
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sql-servertester.database.windows.net;Initial Catalog=sqldb-ppaldatabase;User ID=odin",
-			"password": {
+			"connectionString": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
 					"referenceName": "AzureKeyVault1",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "odin",
-				"secretVersion": "https://kv-credentialstore.vault.azure.net/secrets/odin/a6e25af0fd5344248b2ab72b870b0141"
+				"secretName": "DatabaseConectionppaldatabase",
+				"secretVersion": "14e34a5a64ee41bcb1a48d507c9ae035"
 			}
 		},
 		"connectVia": {
