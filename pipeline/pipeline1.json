@@ -70,6 +70,10 @@
 										"schema1": {
 											"value": "@item().schema1",
 											"type": "Expression"
+										},
+										"table": {
+											"value": "@item().table",
+											"type": "Expression"
 										}
 									}
 								}
