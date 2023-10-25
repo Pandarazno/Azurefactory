@@ -51,8 +51,29 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"source": {
+									"type": "AzureSqlSource",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
+								},
 								"enableStaging": false
-							}
+							},
+							"inputs": [
+								{
+									"referenceName": "AzureSqlTable1",
+									"type": "DatasetReference",
+									"parameters": {
+										"urlkeyvault": {
+											"value": "https://kv-credentialstore.vault.azure.net/",
+											"type": "Expression"
+										},
+										"schema1": {
+											"value": "@item().schema1",
+											"type": "Expression"
+										}
+									}
+								}
+							]
 						}
 					]
 				}
@@ -60,16 +81,12 @@
 		],
 		"parameters": {
 			"Schema1": {
-				"type": "array",
-				"defaultValue": [
-					"finance"
-				]
+				"type": "string",
+				"defaultValue": "finance"
 			},
 			"Schema2": {
-				"type": "array",
-				"defaultValue": [
-					"dbo"
-				]
+				"type": "string",
+				"defaultValue": "dbo"
 			}
 		},
 		"variables": {
