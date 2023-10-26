@@ -11,7 +11,7 @@
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "DatabaseConectionsecondtester",
-				"secretVersion": "2f88929394b34aeab1be967bfc6af3ae"
+				"secretVersion": "534c5e3b4f3147af84eeaec033d154a9"
 			}
 		},
 		"connectVia": {
