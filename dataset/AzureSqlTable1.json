@@ -9,7 +9,7 @@
 			"urlkeyvault": {
 				"type": "string"
 			},
-			"schema1": {
+			"schema": {
 				"type": "string"
 			},
 			"table": {
@@ -21,7 +21,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": {
-				"value": "@dataset().Schema1",
+				"value": "@dataset().Schema",
 				"type": "Expression"
 			},
 			"table": {

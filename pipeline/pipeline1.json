@@ -129,8 +129,8 @@
 											"value": "https://kv-credentialstore.vault.azure.net/",
 											"type": "Expression"
 										},
-										"schema1": {
-											"value": "@item().schema1",
+										"schema": {
+											"value": "@item().schema",
 											"type": "Expression"
 										},
 										"table": {
@@ -166,7 +166,7 @@
 			}
 		],
 		"parameters": {
-			"Schema1": {
+			"Schema": {
 				"type": "string",
 				"defaultValue": "finance"
 			},
