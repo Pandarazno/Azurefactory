@@ -85,7 +85,7 @@
 											"sink": {
 												"name": "Codigo",
 												"type": "Guid",
-												"physicalType": "Guid"
+												"physicalType": "uniqueidentifier"
 											}
 										},
 										{
@@ -97,7 +97,7 @@
 											"sink": {
 												"name": "Nombre",
 												"type": "String",
-												"physicalType": "String"
+												"physicalType": "varchar"
 											}
 										},
 										{
@@ -109,7 +109,7 @@
 											"sink": {
 												"name": "CodigoDane",
 												"type": "String",
-												"physicalType": "String"
+												"physicalType": "nvarchar"
 											}
 										}
 									],
@@ -125,10 +125,6 @@
 									"referenceName": "AzureSqlTable1",
 									"type": "DatasetReference",
 									"parameters": {
-										"urlkeyvault": {
-											"value": "https://kv-credentialstore.vault.azure.net/",
-											"type": "Expression"
-										},
 										"schema": {
 											"value": "@item().schema",
 											"type": "Expression"
@@ -145,10 +141,6 @@
 									"referenceName": "AzureSqlTable2",
 									"type": "DatasetReference",
 									"parameters": {
-										"urlkeyvault": {
-											"value": "https://kv-credentialstore.vault.azure.net/",
-											"type": "Expression"
-										},
 										"schema2": {
 											"value": "@item().schema2",
 											"type": "Expression"
