@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "adf-azurefactorytest"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://kv-credentialstore.vault.azure.net/"
 		},
