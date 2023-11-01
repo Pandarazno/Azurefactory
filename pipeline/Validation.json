@@ -298,17 +298,6 @@
 									"type": "String",
 									"physicalType": "String"
 								}
-							},
-							{
-								"source": {
-									"name": "prueba",
-									"type": "String"
-								},
-								"sink": {
-									"name": "Column23",
-									"type": "String",
-									"physicalType": "String"
-								}
 							}
 						],
 						"typeConversion": true,
