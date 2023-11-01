@@ -5,7 +5,7 @@
 			"AzureKeyVault1": {
 				"type": "string"
 			},
-			"SecretNameKeyVault": {
+			"secretnamekeyvault": {
 				"type": "string"
 			}
 		},
