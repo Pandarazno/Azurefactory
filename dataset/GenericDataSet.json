@@ -9,7 +9,7 @@
 					"value": "@dataset().AzureKeyVault1",
 					"type": "Expression"
 				},
-				"SecretNameKeyVault": {
+				"secretnamekeyvault": {
 					"value": "@dataset().secretnamekeyvault",
 					"type": "Expression"
 				}
@@ -19,7 +19,7 @@
 			"schema": {
 				"type": "string"
 			},
-			"tabla": {
+			"clicsreport": {
 				"type": "string"
 			},
 			"AzureKeyVault1": {
@@ -38,7 +38,7 @@
 				"type": "Expression"
 			},
 			"table": {
-				"value": "@dataset().tabla",
+				"value": "@dataset().clicsreport",
 				"type": "Expression"
 			}
 		}
