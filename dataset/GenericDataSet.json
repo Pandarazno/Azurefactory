@@ -1,0 +1,46 @@
+{
+	"name": "GenericDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseppal",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"AzureKeyVault1": {
+					"value": "@dataset().AzureKeyVault1",
+					"type": "Expression"
+				},
+				"SecretNameKeyVault": {
+					"value": "@dataset().secretnamekeyvault",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"schema": {
+				"type": "string"
+			},
+			"tabla": {
+				"type": "string"
+			},
+			"AzureKeyVault1": {
+				"type": "string"
+			},
+			"secretnamekeyvault": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tabla",
+				"type": "Expression"
+			}
+		}
+	}
+}
