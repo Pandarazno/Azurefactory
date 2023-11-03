@@ -19,14 +19,8 @@
 						"referenceName": "BinaryDataSourceFolder",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": {
-								"value": "@pipeline().parameters.SourceStore_Location",
-								"type": "Expression"
-							},
-							"directory": {
-								"value": "@pipeline().parameters.SourceStore_Directory",
-								"type": "Expression"
-							}
+							"container": "https://ststoragedata.blob.core.windows.net/containerexcercise3",
+							"directory": "https://ststoragedata.blob.core.windows.net/containerexcercise3"
 						}
 					},
 					"fieldList": [
