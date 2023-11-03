@@ -17,11 +17,7 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "BinaryDataSourceFolder",
-						"type": "DatasetReference",
-						"parameters": {
-							"container": "https://ststoragedata.blob.core.windows.net/containerexcercise3/Creacion.xlsb",
-							"directory": "https://ststoragedata.blob.core.windows.net/containerexcercise3"
-						}
+						"type": "DatasetReference"
 					},
 					"fieldList": [
 						"childItems"
@@ -111,41 +107,13 @@
 							"inputs": [
 								{
 									"referenceName": "BinaryDataSourceFile",
-									"type": "DatasetReference",
-									"parameters": {
-										"container": {
-											"value": "@pipeline().parameters.SourceStore_Location",
-											"type": "Expression"
-										},
-										"directory": {
-											"value": "@pipeline().parameters.SourceStore_Directory",
-											"type": "Expression"
-										},
-										"filename": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "BinaryDataDestination",
-									"type": "DatasetReference",
-									"parameters": {
-										"container": {
-											"value": "https://ststoragedata.blob.core.windows.net/containerexcercise3",
-											"type": "Expression"
-										},
-										"directory": {
-											"value": "https://ststoragedata.blob.core.windows.net/containerexcercise3/Creacion.xlsb",
-											"type": "Expression"
-										},
-										"filename": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						},
@@ -171,21 +139,7 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "BinaryDataSourceFile",
-									"type": "DatasetReference",
-									"parameters": {
-										"container": {
-											"value": "@pipeline().parameters.SourceStore_Location",
-											"type": "Expression"
-										},
-										"directory": {
-											"value": "@pipeline().parameters.SourceStore_Directory",
-											"type": "Expression"
-										},
-										"filename": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								},
 								"enableLogging": false,
 								"storeSettings": {
