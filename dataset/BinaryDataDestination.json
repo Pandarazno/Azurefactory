@@ -1,5 +1,5 @@
 {
-	"name": "BinaryDataContainer",
+	"name": "BinaryDataDestination",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
