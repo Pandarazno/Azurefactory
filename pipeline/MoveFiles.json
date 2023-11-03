@@ -207,16 +207,20 @@
 		],
 		"parameters": {
 			"SourceStore_Location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "https://ststoragedata.blob.core.windows.net/containerexcercise3"
 			},
 			"SourceStore_Directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "https://ststoragedata.blob.core.windows.net/containerexcercise3"
 			},
 			"DestinationStore_Location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "https://ststoragedata.blob.core.windows.net/containerexcercise4"
 			},
 			"DestinationStore_Directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "https://ststoragedata.blob.core.windows.net/containerexcercise4"
 			}
 		},
 		"annotations": []
