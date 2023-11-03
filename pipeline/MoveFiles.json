@@ -19,7 +19,7 @@
 						"referenceName": "BinaryDataSourceFolder",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": "https://ststoragedata.blob.core.windows.net/containerexcercise3",
+							"container": "https://ststoragedata.blob.core.windows.net/containerexcercise3/Creacion.xlsb",
 							"directory": "https://ststoragedata.blob.core.windows.net/containerexcercise3"
 						}
 					},
