@@ -1,5 +1,5 @@
 {
-	"name": "BinaryDataSource",
+	"name": "BinaryDataSourceFolder",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
