@@ -66,7 +66,7 @@
 				}
 			},
 			{
-				"name": "ForEachFile",
+				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -85,7 +85,7 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Copy files",
+							"name": "Copy data1",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -157,11 +157,11 @@
 							]
 						},
 						{
-							"name": "DeleteFile",
+							"name": "Delete1",
 							"type": "Delete",
 							"dependsOn": [
 								{
-									"activity": "Copy files",
+									"activity": "Copy data1",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -189,12 +189,18 @@
 											"type": "Expression"
 										},
 										"filename": {
-											"value": "@item.name",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
 								},
-								"enableLogging": false,
+								"logStorageSettings": {
+									"linkedServiceName": {
+										"referenceName": "AzureBlobStorage1",
+										"type": "LinkedServiceReference"
+									}
+								},
+								"enableLogging": true,
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
 									"recursive": true,
