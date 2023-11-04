@@ -34,7 +34,6 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
-						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -82,7 +81,7 @@
 						"value": "@activity('FilterFiles').output.value",
 						"type": "Expression"
 					},
-					"batchCount": 20,
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "Copy files",
@@ -209,14 +208,14 @@
 		"parameters": {
 			"sourcestore_location": {
 				"type": "string",
-				"defaultValue": "container3"
+				"defaultValue": "containerexcercise3"
 			},
 			"sourcestore_directory": {
 				"type": "string"
 			},
 			"destinationstore_location": {
 				"type": "string",
-				"defaultValue": "container4"
+				"defaultValue": "containerexcercise4"
 			},
 			"destinationstore_directory": {
 				"type": "string"
