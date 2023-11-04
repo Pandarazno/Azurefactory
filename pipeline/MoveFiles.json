@@ -178,7 +178,21 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "BinaryDataSourceFile",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"container": {
+											"value": "@pipeline().parameters.sourcestore_location",
+											"type": "Expression"
+										},
+										"directory": {
+											"value": "@pipeline().parameters.sourcestore_directory",
+											"type": "Expression"
+										},
+										"filename": {
+											"value": "@item.name",
+											"type": "Expression"
+										}
+									}
 								},
 								"enableLogging": false,
 								"storeSettings": {
@@ -194,8 +208,7 @@
 		],
 		"parameters": {
 			"sourcestore_location": {
-				"type": "string",
-				"defaultValue": "Container3"
+				"type": "string"
 			},
 			"sourcestore_directory": {
 				"type": "string"
