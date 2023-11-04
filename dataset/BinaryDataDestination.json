@@ -21,7 +21,18 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"container": "containerexcercise4"
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().container",
+					"type": "Expression"
+				}
 			}
 		}
 	}
