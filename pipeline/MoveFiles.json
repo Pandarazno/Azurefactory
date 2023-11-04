@@ -208,7 +208,8 @@
 		],
 		"parameters": {
 			"sourcestore_location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "container3"
 			},
 			"sourcestore_directory": {
 				"type": "string"
