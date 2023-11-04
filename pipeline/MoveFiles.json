@@ -17,7 +17,17 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "BinaryDataSourceFolder",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": {
+								"value": "@pipeline().parameters.sourcestore_location",
+								"type": "Expression"
+							},
+							"directory": {
+								"value": "@pipeline().parameters.sourcestore_directory",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"childItems"
@@ -154,6 +164,22 @@
 				}
 			}
 		],
+		"parameters": {
+			"sourcestore_location": {
+				"type": "string",
+				"defaultValue": "Container3"
+			},
+			"sourcestore_directory": {
+				"type": "string"
+			},
+			"destination_location": {
+				"type": "string",
+				"defaultValue": "container4"
+			},
+			"destination_directory": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
