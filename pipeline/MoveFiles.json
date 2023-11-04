@@ -208,13 +208,15 @@
 		],
 		"parameters": {
 			"sourcestore_location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "containerexcercise3"
 			},
 			"sourcestore_directory": {
 				"type": "string"
 			},
 			"destinationstore_location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "containerexcercise4"
 			},
 			"destinationstore_directory": {
 				"type": "string"
